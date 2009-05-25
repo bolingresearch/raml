@@ -1,0 +1,32 @@
+<?php
+// Parse data file
+var $file 	= dirname(__FILE__). "/temp/users.txt";
+var $lines 	= file($file, FILE_IGNORE_NEW_LINES);
+
+$sql = 'INSERT INTO `djboling_raml`.`mls_users` ';
+foreach ($lines as $line) {
+	$columns = explode("\t", $line);
+	$sql .= '(`id`, `mls_id`, `first_name`, `last_name`, `address`, `address2`, `city`, `state`, `zipcode`, `phone`) VALUES (\'\', \'1234\', \'Dustin\', \'Boling\', \'13822 Claremont St\', NULL, \'Westminster\', \'CA\', \'92683\', \'(714) 795-2266\');';
+}
+
+
+// MySQL
+var $host 		= "localhost";
+var $username 	= "djboling_raml";
+var $passwd 	= "djboling_lilyb2007";
+var $dbname 	= "djboling_raml";
+
+
+$mysqli = new mysqli($host, $username, $passwrd, $dbname);
+
+// MLS Users
+
+
+
+
+// FTP
+$ftp_host = "idx.fnismls.com";
+$user = "tehamamls_djboling";
+$pass = "2dk9j2ipcz";
+$dir = "IDX/";
+?>
