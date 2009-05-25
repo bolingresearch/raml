@@ -16,7 +16,6 @@ $db_user 	= "djboling_raml";
 $db_pass 	= "djboling_lilyb2007";
 $db_name 	= "djboling_raml";
 
-
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 // MLS Users
