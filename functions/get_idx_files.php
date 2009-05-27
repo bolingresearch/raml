@@ -8,7 +8,7 @@
  * @param string $local_images_dir
  * @param string[] $files Filenames to download and extract.
  */
-function get_idx_files($conn, $temp_dir, $image_dir, $files = array() ) {
+function get_idx_files($conn, $temp_dir, $images_dir, $files = array() ) {
 
 
     // include Tar class

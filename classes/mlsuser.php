@@ -8,11 +8,6 @@ class MLSUser extends DatabaseObject {
 	public $mls_id;
 	public $first_name;
 	public $last_name;
-	public $address;
-	public $address2;
-	public $city;
-	public $state;
-	public $zipcode;
 	public $phone;
 	
 	public function __construct() {
